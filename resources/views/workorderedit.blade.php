@@ -162,7 +162,7 @@
                             <div class="d-flex flex-row align-items-center mb-4">
                                 <i class="fas fa-tools fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
-                                    <input class="form-check-input" type="checkbox" name="replacement" id="replacement" {{ $workorder->interview ? 'checked' : '' }} />
+                                    <input class="form-check-input" type="checkbox" name="replacement" id="replacement" {{ $workorder->replacement ? 'checked' : '' }} />
                                     <label class="form-check-label" for="replacement" style="cursor: pointer">Hardware repair/replacement</label>
                                 </div>
                             </div>
