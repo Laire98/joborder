@@ -328,7 +328,7 @@
                     var total = parseFloat($(this).find('td').eq(4).text().replace(',', ''));
                     grandtotal += total;
                 });
-                $('#grand_total').text(number_format(grandtotal, 2, '.', ','));
+                $('#grand_total').val(number_format(grandtotal, 2, '.', ','));
 
             }
         });
