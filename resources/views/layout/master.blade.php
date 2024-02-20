@@ -200,7 +200,7 @@
         }
 
         var currentYear = new Date().getFullYear();
-        document.getElementById('copyright').innerHTML = 'Copyright &copy; ' + currentYear;
+        document.getElementById('copyright').innerHTML = '&copy; JHAZEKE COMPUTER SHOP ' + currentYear;
 
 
         function toggleFullScreen() {
