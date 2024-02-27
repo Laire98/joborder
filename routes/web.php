@@ -24,8 +24,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['middleware' => ['web']], function () {
-    Route::get('/', function () {
-        return view('login');
+    Route::group(['middleware' => ['guest', 'auth']], function () {
+        Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     });
     Route::get('/login', [AuthController::class, 'login'])->name('login');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
